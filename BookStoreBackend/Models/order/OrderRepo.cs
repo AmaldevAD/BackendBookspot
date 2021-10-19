@@ -37,7 +37,7 @@ namespace BookStoreBackend.Models.order
                 order.orderPlacedAt =Convert.ToString( dr.GetDateTime(3));
                 orders.Add(order);
             }
-
+            conn.Close();
             return orders;
         }
 
